@@ -1,3 +1,6 @@
+
+##Code for reading data
+data<-read.table("household_power_consumption.txt",sep=";",na.strings="?",header=TRUE)
 d1<-subset(data,Date=="1/2/2007")
 d2<-subset(data,Date=="2/2/2007")
 data_feb<-rbind(d1,d2)
@@ -10,7 +13,7 @@ data_feb_f<-cbind(date_time,data_feb)
 
 
 
-##4
+##Upfated Plot 4
 par(mfrow=c(2,2))
 plot(data_feb$date_time,data_feb$Global_active_power,type="n",xlab="",ylab="Global Active Power")
 lines(data_feb$date_time,data_feb$Global_active_power)
