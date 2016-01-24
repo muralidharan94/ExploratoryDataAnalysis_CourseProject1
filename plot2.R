@@ -7,7 +7,7 @@ data_feb$Date<-NULL
 data_feb$Time<-NULL
 data_feb_f<-cbind(date_time,data_feb)
 
-##2
+##Code for plot2
 pch(mar=c(6,6,6,6))
 plot(data_feb$date_time,data_feb$Global_active_power,type="n",ylab="Global Active Power(Kilowatts)",xlab="")
 lines(data_feb$date_time,data_feb$Global_active_power)
