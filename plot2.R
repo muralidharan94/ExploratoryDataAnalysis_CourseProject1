@@ -1,3 +1,5 @@
+##Code for reading and subsetting the required data
+data<-read.table("household_power_consumption.txt",sep=";",na.strings="?",header=TRUE)
 d1<-subset(data,Date=="1/2/2007")
 d2<-subset(data,Date=="2/2/2007")
 data_feb<-rbind(d1,d2)
