@@ -9,7 +9,7 @@ data_feb_f<-cbind(date_time,data_feb)
 
 
 
-##3
+##Plot 3 Code
 pch(mar=c(6,6,6,6))
 plot(data_feb$date_time,data_feb$Sub_metering_1,type="n",xlab="",ylab="Energy Sub Metering")
 lines(data_feb$date_time,data_feb$Sub_metering_1,col="black")
